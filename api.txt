@@ -1,0 +1,17 @@
+TEORIA:
+1. Que es una API
+2. Ejemplos de API
+3. API REST
+   Es un tipo de arquitectura de desarrollo web que se apoya totalmente en el estándar HTTP.
+4. Arquitectura de una API REST(Beneficios) https://juanda.gitbooks.io/webapps/content/api/arquitectura-api-rest.html
+5. Formato de intercambio de datos (JSON XML)
+6. Metodos GET POST PUT DELETE
+7. Tokens
+
+
+PRACTICA
+1. FETCH, AJAX, WEBSOCKET Y AXIOS
+2. Presentacion Maqueta
+3. Uso de la API.
+
+
