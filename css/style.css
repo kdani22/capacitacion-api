@@ -1,0 +1,165 @@
+:root {
+    --color-primario: #B6EADA;
+    --color-secundario: #293462;
+    --color-terciario: #301E67;
+    --color-cuaternario: #03001C;
+    --color-quinto: #5B8FB9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    color: var(--color-primario);
+}
+
+body {
+    background-color: var(--color-cuaternario);
+}
+
+
+
+#banner {
+    padding: 3rem;
+    background-color: var(--color-secundario);
+}
+
+#banner .contenedor-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 991px;
+    margin: auto;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+#banner .contenedor-banner .columna {
+    width: 50%;
+    
+}
+
+#banner .contenedor-banner .columna-titulo h1 {
+    width: fit-content;
+    font-size: 2.8rem;
+    text-align: end;
+    margin: auto;
+    max-width: 8rem;
+}
+
+#banner .contenedor-banner .columna-texto h5 {
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: start;
+    margin: auto;
+    max-width: 9rem;
+}
+
+
+
+
+#seccion-personajes {
+    padding: 3rem 5rem;
+}
+
+#seccion-personajes h2 {
+    text-align: center;
+    padding-bottom: 2.4rem;
+    font-size: 2rem;
+}
+
+#seccion-personajes .contenido-seccion-personajes {
+    width: fit-content;
+    
+}
+
+#seccion-personajes .contenido-seccion-personajes .contenedor-cards-personajes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#seccion-personajes .contenido-seccion-personajes .contenedor-cards-personajes .card-personaje {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-terciario);
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 500px;
+    min-width: 500px;
+}
+
+#seccion-personajes .contenido-seccion-personajes .contenedor-cards-personajes .card-personaje .card-img-personaje {
+    max-width: 150px;
+    overflow: hidden;
+    padding: 10px;
+    min-width: 150px;
+}
+
+
+#seccion-personajes .contenido-seccion-personajes .contenedor-cards-personajes .card-personaje .card-img-personaje img {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#seccion-personajes .contenido-seccion-personajes .contenedor-cards-personajes .card-personaje .card-contenido-personaje {
+    padding: 1.2rem;
+    max-width: 292px;
+    min-width: 292px;
+}
+
+#seccion-personajes .contenido-seccion-personajes .contenedor-cards-personajes .card-personaje .card-contenido-personaje h4 {
+    font-size: 1.55rem;
+}
+
+#seccion-personajes .contenido-seccion-personajes .contenedor-cards-personajes .card-personaje .card-contenido-personaje hr {
+    margin: 0.4rem 0;
+}
+
+#seccion-personajes .contenido-seccion-personajes .contenedor-cards-personajes .card-personaje .card-contenido-personaje .texto-card {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+@media (max-width: 650px) {
+    #banner {
+        padding: 1rem;
+    }
+
+    #seccion-personajes {
+        padding: 0;
+    }
+
+    #seccion-personajes .contenido-seccion-personajes .contenedor-cards-personajes .card-personaje {
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    #seccion-personajes .contenido-seccion-personajes .contenedor-cards-personajes .card-personaje .card-img-personaje {
+        min-width: 0;
+        max-width: 200px;
+        margin: auto;
+    }
+
+    #seccion-personajes h2 {
+        padding-bottom: 1.2rem;
+        padding-top: 1rem;
+    }
+}
